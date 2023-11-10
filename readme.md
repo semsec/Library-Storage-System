@@ -7,6 +7,7 @@ We have 4 different files :
 - books.json and books.csv care storage of our books
 - authors.json is list of authors
 - command.json is your specified commandline. 
+- The publish date you return to user should be in format of times tamp.
 - You are free to choose your own request / response cycle, but don't confuse yourself with this , it can decent to be a cli-app
 ### Cammand.json
 This file has two general keys : 1 - command_name  2 - parameters . 
