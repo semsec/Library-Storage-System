@@ -9,6 +9,9 @@ We have 4 different files :
 - command.json is your specified commandline. 
 - The publish date you return to user should be in format of time tamp.
 - You are free to choose your own request / response cycle, but don't confuse yourself with this , it can be decent to implement a cli-app
+- Your deadline for the project is until end of the day. 
+
+
 ### Cammand.json
 This file has two general keys : 1 - command_name  2 - parameters . 
 You are just restricted in two keys. But for values you  are free to design your own system .
