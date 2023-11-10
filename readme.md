@@ -8,7 +8,8 @@ We have 4 different files :
 - authors.json is list of authors
 - command.json is your specified commandline. 
 - The publish date you return to user should be in format of time tamp.
-- You are free to choose your own request / response cycle, but don't confuse yourself with this , it can be decent to implement a cli-app
+- You are free to choose your own request / response cycle, but don't confuse yourself with this ,/ it can be decent to implement a merely simple cli-app
+
 - Your deadline for the project is until end of the day. 
 
 
