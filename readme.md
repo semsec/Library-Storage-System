@@ -2,7 +2,7 @@
 
 This project implements a Library Storage System, providing functionalities for managing books and authors.\
 The system is designed to handle complex tasks related to book management in a library.
-## Acknowledgement
+## Pre Knowledge
 We have 4 different files : 
 - books.json and books.csv care storage of our books
 - authors.json is list of authors
@@ -38,20 +38,4 @@ I are just restricted in two keys. But for values you  are free to design your o
 - Implement a soft-delete mechanism instead of permanent deletion.
 - Allow books to be marked as deleted but still accessible for historical purposes.
 - Deleting of a book should be able by multiple criteria .
-
-## Usage
-
-Provide instructions on how to set up and use the Library Storage System. Include details about dependencies, installation steps, and any configuration required.
-
-## Contributing
-
-Explain how others can contribute to the project. Include information about code style, testing, and the contribution process.
-
-## License
-
-Specify the license under which the project is distributed.
-
-## Acknowledgments
-
-Give credit to individuals or projects that have contributed to or inspired this project.
 
