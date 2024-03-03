@@ -23,7 +23,6 @@ You are just restricted in two keys. But for values you  are free to design your
 - Implement a paginated, filterable, and sortable list of all registered books.
 - Allow users to choose the number of items per page and filter books by author.
 - Sorting should be based of publish date
-- Implement caching mechanisms for better performance.
 
 ### Task 2: Getting a Specific Book
 
@@ -34,13 +33,10 @@ You are just restricted in two keys. But for values you  are free to design your
 
 - Be aware the ISBN format should be ISBN-13.
 - Support batch additions by allowing users to upload a CSV or JSON file with multiple new books.
-- Implement a versioning system for books, allowing updates and maintaining a history of changes.
 
 ### Task 4: Deleting a Specific Book
 
 - Implement a soft-delete mechanism instead of permanent deletion.
-- Allow books to be marked as deleted but still accessible for historical purposes.
-- Deleting of a book should be able by multiple criteria .
 
 ### Task 5 : Update existed Source
 
