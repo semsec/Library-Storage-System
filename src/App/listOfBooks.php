@@ -1,10 +1,10 @@
 <?php
 
 namespace Src\App;
-class Test
+
+class listOfBooks
 {
     public function __construct()
     {
-        echo self::class;
     }
 }
