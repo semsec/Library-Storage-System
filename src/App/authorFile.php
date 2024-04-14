@@ -3,10 +3,10 @@
 namespace Src\App;
 
 
-class authors extends fileReader
+class authorFile extends fileReader
 {
-    private array $authorJson = [];
-    function read(string $fileName) : array
+    public array $authorJson = [];
+    function read(string $fileName = 'database/authors.json') : array
     {
         try {
             $file = fopen($fileName, 'r');
