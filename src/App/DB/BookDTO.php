@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\App;
+namespace Src\App\DB;
 
-class bookDTO
+class BookDTO
 {
     public ?string $ISBN;
     public ?string $bookTitle;

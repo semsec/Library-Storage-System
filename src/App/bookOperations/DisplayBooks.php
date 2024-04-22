@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\App;
+namespace Src\App\bookOperations;
 
 class displayBooks
 {

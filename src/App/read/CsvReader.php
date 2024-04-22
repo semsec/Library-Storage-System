@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\App;
+namespace Src\App\read;
 
-class csvReader extends fileReader
+class CsvReader implements fileReader
 {
     private array $data=[];
     function read($fileName) : void

@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\App;
+namespace Src\App\read;
 
-class jsonReader extends fileReader
+class JsonReader implements fileReader
 {
     private array $data=[];
     function read(string $fileName) : void

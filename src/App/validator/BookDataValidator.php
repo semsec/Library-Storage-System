@@ -1,11 +1,12 @@
 <?php
 
-namespace Src\App;
+namespace Src\App\validator;
 
-class validator
+class BookDataValidator
 {
     public function validateBookData(array $newBook): bool
     {
+        $isbn = (new isbnValidator())->validate($newBook['ISBN']);
         if (
             empty($newBook['ISBN']) ||
             empty($newBook['bookTitle']) ||
@@ -17,7 +18,7 @@ class validator
         }
 
         if (
-            is_string($newBook['ISBN']) &&
+            (is_string($newBook['ISBN']) && $isbn) &&
             is_string($newBook['bookTitle']) &&
             is_string($newBook['authorName']) &&
             is_int($newBook['pagesCount']) &&
@@ -27,6 +28,6 @@ class validator
         } else {
             return false;
         }
-    return true;
+
     }
 }

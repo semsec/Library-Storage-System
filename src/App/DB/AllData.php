@@ -1,14 +1,16 @@
 <?php
 
-namespace Src\App;
+namespace Src\App\DB;
+
+use Src\App\read;
 
 class AllData
 {
     private array $booksDTO = [];
     public function __construct()
     {
-        $js = new \Src\App\jsonReader();
-        $csv = new \Src\App\csvReader();
+        $js = new read\jsonReader();
+        $csv = new read\csvReader();
 
         $js->read('database/books.json');
         $csv->read('database/books.csv');
