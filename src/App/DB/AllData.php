@@ -11,9 +11,8 @@ class AllData
     {
         $js = new read\jsonReader();
         $csv = new read\csvReader();
-
-        $js->read('database/books.json');
-        $csv->read('database/books.csv');
+        $js->read(__DIR__.'/../../../database/books.json');
+        $csv->read(__DIR__.'/../../../database/books.csv');
 
         $temp = array_merge( $js->getData(), $csv->getData());
         foreach ($temp as $data) {

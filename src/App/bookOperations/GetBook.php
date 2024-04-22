@@ -18,7 +18,7 @@ class GetBook
             }
         }
         elseif ($validator === false) {
-            return 'ISBN code you provided is not supported, please provide ISBN13 format';
+            return 'ISBN code you provided is not supported, please provide ISBN-13 format';
         }
 
     }

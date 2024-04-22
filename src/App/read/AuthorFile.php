@@ -1,11 +1,9 @@
 <?php
 
-namespace Src\App\DB;
+namespace Src\App\read;
 
 
-use Src\App\read\fileReader;
-
-class AuthorFile implements fileReader
+class AuthorFile implements FileReader
 {
     public array $authorJson = [];
     function read(string $fileName = 'database/authors.json') : array

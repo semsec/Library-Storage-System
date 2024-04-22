@@ -2,7 +2,7 @@
 
 namespace Src\App\read;
 
-class JsonReader implements fileReader
+class JsonReader implements FileReader
 {
     private array $data=[];
     function read(string $fileName) : void

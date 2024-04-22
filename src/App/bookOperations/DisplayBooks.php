@@ -2,7 +2,7 @@
 
 namespace Src\App\bookOperations;
 
-class displayBooks
+class DisplayBooks
 {
     function display(array $books, array $authors, ?string $authorName = null, int $page = 1, int $itemsPerPage = 10) : array
     {

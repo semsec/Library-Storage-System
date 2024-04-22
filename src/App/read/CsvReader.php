@@ -2,7 +2,7 @@
 
 namespace Src\App\read;
 
-class CsvReader implements fileReader
+class CsvReader implements FileReader
 {
     private array $data=[];
     function read($fileName) : void

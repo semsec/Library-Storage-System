@@ -19,6 +19,7 @@ class AddBook
 
     function add($path) : void
     {
+        $path = __DIR__.$path;
         if (!isset($this->newBook['ISBN'])) {
             return;
         }
