@@ -14,6 +14,7 @@ require __DIR__ . '/vendor/autoload.php';
 //        }
 
 $bookData = (new \Src\App\DB\AllData())->getBooks();
+
 $authors = new \Src\App\read\AuthorFile();
 $authorsName = $authors->read();
 //var_dump($authorsName);
@@ -34,8 +35,38 @@ $new = [
 ];
 
 //(new \Src\App\bookOperations\AddBook($new))->add('database/books.json');
+//$csvfile = new Src\App\read\CsvReader();
+//$csvfile->read('database/books.csv');
+//$csvData = $csvfile->getData();
+//echo '<pre>';
+//var_dump($csvData); exit();
+$delete = new \Src\App\bookOperations\JsonDeleter();
+echo '<pre>';
+$delete->delete('978-0307594005');
+//$content = file_get_contents('database/books.json');
+//echo '<pre>';
+//var_dump($content);
 
+$data['books'] = [
+    [
+        "ISBN"=> "978-1451635626",
+            "bookTitle"=> "Dystopian Chronicles",
+            "authorName"=> "Aldous Orson",
+            "pagesCount"=> 412,
+            "publishDate"=> "1950-09-21"
+        ],
+        [
+            "ISBN"=> "978-0061120084",
+            "bookTitle"=> "Beyond the Horizon",
+            "authorName"=> "Aldous Orson",
+            "pagesCount"=> 294,
+            "publishDate"=> "1962-03-17"
+        ]
+];
+echo '<pre>';
+print_r($data);
 
-$get = (new \Src\App\bookOperations\GetBook())->findBook($bookData, '978-145173564');
-
-var_dump($get);
+//$book = file_get_contents('database/books.json');
+//$decode = json_decode($book , true);
+//echo '<pre>';
+//print_r($decode);

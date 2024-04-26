@@ -6,20 +6,26 @@ use Src\App\read\csvReader;
 
 class CsvDeleter implements DeleteBook
 {
-    private array $csvData;
     function delete(string $ISBN)
     {
         $readCsv = new csvReader();
         $readCsv->read(__DIR__.'\..\..\..\database\books.csv');
-        $this->csvData = $readCsv->getData();
+        $csvData = array($readCsv->getData());
+        $csvData = $readCsv->getData();
 
-        foreach ($this->csvData as $key => $data) {
+        foreach ($csvData as $key => $data) {
             if ($data['ISBN'] == $ISBN) {
-                unset($this->csvData[$key]);
-                break;
+                echo 'Book information: <br>';
+                print_r($data);
+                unset($csvData[$key]);
             }
-//            print_r($data['ISBN']);
         }
-        print_r($this->csvData);
+
+        $csvFile = fopen(__DIR__.'\..\..\..\database\books.csv', 'w');
+        fputcsv($csvFile, ['ISBN', 'bookTitle', 'authorName', 'pagesCount', 'publishDate']);
+        foreach ($csvData as $row) {
+            fputcsv($csvFile, $row);
+        }
+        fclose($csvFile);
     }
 }
