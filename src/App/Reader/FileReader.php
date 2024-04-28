@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\App\read;
+namespace Src\App\Reader;
 
 interface FileReader
 {

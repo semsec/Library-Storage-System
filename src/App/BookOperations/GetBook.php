@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\App\bookOperations;
+namespace Src\App\BookOperations;
 
-use Src\App\validator\isbnValidator;
+use Src\App\Validator\isbnValidator;
 
 class GetBook
 {

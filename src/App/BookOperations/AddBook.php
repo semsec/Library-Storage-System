@@ -1,9 +1,9 @@
 <?php
 
-namespace Src\App\bookOperations;
+namespace Src\App\BookOperations;
 
-use Src\App\validator\existenceValidator;
-use Src\App\validator\bookDataValidator;
+use Src\App\Validator\existenceValidator;
+use Src\App\Validator\bookDataValidator;
 
 class AddBook
 {
@@ -19,7 +19,6 @@ class AddBook
 
     function add($path) : void
     {
-        $path = __DIR__.$path;
         if (!isset($this->newBook['ISBN'])) {
             return;
         }

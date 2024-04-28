@@ -1,4 +1,4 @@
 {
-  "command_name": "your command",
-  "parameters": "your parameters"
+  "command_name": "displayBook",
+  "parameters": "978-1458533564"
 }

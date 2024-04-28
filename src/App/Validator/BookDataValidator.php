@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\App\validator;
+namespace Src\App\Validator;
 
 class BookDataValidator
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\App\validator;
+namespace Src\App\Validator;
 
 use Src\App\DB\AllData;
 

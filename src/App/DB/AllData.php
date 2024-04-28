@@ -2,15 +2,15 @@
 
 namespace Src\App\DB;
 
-use Src\App\read;
+use Src\App\Reader;
 
 class AllData
 {
     private array $booksDTO = [];
     public function __construct()
     {
-        $js = new read\jsonReader();
-        $csv = new read\csvReader();
+        $js = new Reader\jsonReader();
+        $csv = new Reader\csvReader();
         $js->read(__DIR__.'/../../../database/books.json');
         $csv->read(__DIR__.'/../../../database/books.csv');
 

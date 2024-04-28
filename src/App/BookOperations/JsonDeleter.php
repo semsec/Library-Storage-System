@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\App\bookOperations;
+namespace Src\App\BookOperations;
 
-use Src\App\read\JsonReader;
+use Src\App\Reader\JsonReader;
 
 class JsonDeleter implements DeleteBook
 {

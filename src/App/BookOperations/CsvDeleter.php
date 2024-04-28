@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\App\bookOperations;
+namespace Src\App\BookOperations;
 
-use Src\App\read\csvReader;
+use Src\App\Reader\csvReader;
 
 class CsvDeleter implements DeleteBook
 {
