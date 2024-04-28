@@ -17,7 +17,7 @@ class CommandHandler
 {
     private $commandFile;
 
-    public function __construct($commandFile)
+    public function __construct()
     {
         $this->commandFile = (new CommandReader())->read(__DIR__. '/../../../commands.json');
     }
